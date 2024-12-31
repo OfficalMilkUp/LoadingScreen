@@ -1,10 +1,10 @@
-LoadingText1 = ""
-LoadingText2 = ""
-LoadingText3 = ""
-LoadingText4 = ""
-LoadingText5 = ""
+LoadingText1 = "Loading Library"
+LoadingText2 = "Updating Library"
+LoadingText3 = "Getting Script"
+LoadingText4 = "Executing Script"
+LoadingText5 = "Error: Execution Failed, re-trying!"
 
-local ScriptTitle = "Mori Scripts!"
+local ScriptTitle = "Pet Simulator 99: Script Loading"
 
 if LoadingScreen ~= false then
     local Loading = Instance.new("ScreenGui")
@@ -30,13 +30,13 @@ if LoadingScreen ~= false then
     local Percentage = Instance.new("TextLabel")
     local Tip = Instance.new("TextLabel")
     local EndSequence = Instance.new("Frame")
-    Loading.Name = "Mori"
+    Loading.Name = "Egorikusa"
     Loading.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
     Loading.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
     Loading.DisplayOrder = 999999999
     MainFrame.Name = "MainFrame"
     MainFrame.Parent = Loading
-    MainFrame.BackgroundColor3 = Color3.fromRGB(34,77,64,255)
+    MainFrame.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
     MainFrame.BorderSizePixel = 0
     MainFrame.Position = UDim2.new(-0.125662372, 0, -0.125935167, 0)
     MainFrame.Size = UDim2.new(1.25, 0, 1.25, 0)
@@ -102,13 +102,13 @@ if LoadingScreen ~= false then
     UICorner_6.Parent = InsideDot_3
     Bar.Name = "Bar"
     Bar.Parent = MainFrame
-    Bar.BackgroundColor3 = Color3.fromRGB(30,30,30)
+    Bar.BackgroundColor3 = Color3.fromRGB(206,206,206)
     Bar.BorderSizePixel = 0
     Bar.Position = UDim2.new(0.219547689, 0, 0.764966607, 0)
     Bar.Size = UDim2.new(0.560904443, 0, 0.0365853645, 0)
     Bar2.Name = "Bar2"
     Bar2.Parent = Bar
-    Bar2.BackgroundColor3 = Color3.fromRGB206,206,206)
+    Bar2.BackgroundColor3 = Color3.fromRGB(60, 60, 60)
     Bar2.BorderSizePixel = 0
     Bar2.Size = UDim2.new(0, 0, 1, 0)
     UICorner_7.CornerRadius = UDim.new(0.5, 0)
@@ -117,7 +117,7 @@ if LoadingScreen ~= false then
     UICorner_8.Parent = Bar
     Percentage.Name = "Percentage"
     Percentage.Parent = Bar
-    Percentage.BackgroundColor3 = Color3.fromRGB(206,206,206)
+    Percentage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     Percentage.BackgroundTransparency = 1.000
     Percentage.Position = UDim2.new(0.280816972, 0, 0.0909090936, 0)
     Percentage.Size = UDim2.new(0.438366145, 0, 0.787879348, 0)
@@ -137,7 +137,11 @@ if LoadingScreen ~= false then
     Tip.Text = ""
     Tip.TextColor3 = Color3.fromRGB(138, 138, 138)
     Tip.TextScaled = true
-    Tip.TextSize = 14.000
+    Tip.TextSize = 14.000-- MADE BY X SCRIPTS - discord.gg/xscripts
+    -- MADE BY X SCRIPTS - discord.gg/xscripts
+    -- MADE BY X SCRIPTS - discord.gg/xscripts
+    -- MADE BY X SCRIPTS - discord.gg/xscripts
+    -- MADE BY X SCRIPTS - discord.gg/xscripts
     Tip.TextWrapped = true
     EndSequence.Name = "EndSequence"
     EndSequence.Parent = Loading
@@ -208,8 +212,3 @@ if LoadingScreen ~= false then
     end
     coroutine.wrap(LSNGUH_fake_script)()
 end
-
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Backpack, false)
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.PlayerList, false)
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.Chat, false)
-game.StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.EmotesMenu, false)
